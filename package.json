@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/crnguyen/node_modules_practice/issues"
   },
-  "homepage": "https://github.com/crnguyen/node_modules_practice#readme"
+  "homepage": "https://github.com/crnguyen/node_modules_practice#readme",
+  "dependencies": {
+    "better-array": "^0.3.1"
+  }
 }
