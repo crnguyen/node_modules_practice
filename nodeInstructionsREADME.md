@@ -23,3 +23,51 @@ let BetterArray = require('better-array');
 ```
 More information on Node
 github repo: https://github.com/crnguyen/my-first-node-project/blob/master/readMe.md
+
+
+Starting a Node app
+- npm init
+
+Node modules (how to make them, export them, and import them)
+- above
+Node packages (take note of any NPM packages you have used/researched)
+- npm i express
+- npm i ejs
+-npm i better-array
+
+Adding express to a node app
+- "npm i express" to install
+- reqire the app in index.js
+
+Express routes
+- npm i express
+- require expres in index.js
+
+Views
+- allows you to link a separate html folder to your javascript using express
+```javascript
+const express = require("express");
+
+const app = express();
+
+//home route
+app.get("/", (req, res) => {
+    res.sendFile(__dirname+ "/Views/index.html");
+})
+
+app.get("/about", (req,res) => {
+    res.sendFile(__dirname+ "/Views/about.html")
+})
+
+app.get("/blog", (req, res) => {
+    res.sendFile(__dirname+ "/Views/blog-directory.html")
+})
+
+
+app.listen(8000, () => {
+    console.log("listening to port 8000");
+    })
+```
+Templates
+Layouts
+Controllers
